@@ -22,11 +22,19 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import { defineCustomElements } from "@ionic/pwa-elements/loader";
+import useFirebaseAuth from "./hooks/firebase-auth";
 
-const app = createApp(App)
-  .use(IonicVue)
-  .use(router);
-  
-router.isReady().then(() => {
-  app.mount('#app');
-});
+const { authCheck } = useFirebaseAuth();
+
+const app = createApp(App).use(IonicVue);
+
+authCheck()
+  .then(() => {
+    app.use(router);
+    router.isReady();
+  })
+  .then(() => {
+    app.mount("#app");
+    defineCustomElements(window);
+  });

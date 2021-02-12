@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('fonts/Poppins/Poppins-Regular.ttf');
+}
+ion-content {
+  --ion-background-color: linear-gradient(165.96deg, #22272E 0%, #22272E 0.01%, #0C0D10 100%);
+}
+ion-header, ion-toolbar, ion-page {
+  --ion-background-color: transparent;
+}
+ion-button:not(.button-clear) {
+  --background: linear-gradient(106.8deg, #24292F 0%, #212932 100%);
+}
+ion-button {
+  --border-radius: 0.8rem;
+  height: 3.5rem;
+  font-size: 1rem;
+  color: rgba(var(--ion-text-color-rgb), 0.6);
+}
+ion-toolbar {
+  color: rgba(var(--ion-text-color-rgb), 0.6);
+  padding: 1rem;
+  background-color: transparent;
+}
+ion-app > ion-grid {
+  padding: 0 1rem 0 1rem;
+}
+ion-footer {
+  padding: 0px 0.66rem 0.66rem 0.66rem;
+  border-top-left-radius: 2.2rem !important;
+  border-top-right-radius: 2.2rem !important;
+  box-shadow: 0px -1px 0px rgba(255, 255, 255, 0.1), -10px -10px 30px rgba(0, 0, 0, 0.25);
+}
+ion-toolbar ion-button, ion-toolbar ion-back-button {
+  --background: linear-gradient(135deg, #22272E 0%, #0C0D10 100%);
+  --border-radius: 50%;
+  width: 3.5rem !important;
+  height: 3.5rem !important;
+}
+
+ion-input {
+  color: var(--ion-text-color);
+  background: linear-gradient(180deg, #0C0D10 0%, #22272E 164.77%);
+  box-shadow: 0.5rem 0.5rem 2rem rgba(202, 212, 226, 0.08), -0.5rem -0.5rem 1rem rgba(0, 0, 0, 0.25), 1px -1px 0px rgba(202, 212, 226, 0.07), -1px 1px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  text-align: left;
+  height: 3.5rem;
+}
+.ion-color-gradientblue {
+  --ion-color-base: var(--ion-color-gradientblue);
+  --ion-color-base-rgb: var(--ion-color-gradientblue-rgb);
+  --ion-color-contrast: var(--ion-color-gradientblue-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-gradientblue-contrast-rgb);
+  --ion-color-shade: var(--ion-color-gradientblue-shade);
+  --ion-color-tint: var(--ion-color-gradientblue-tint);
+}
+.auth-button {
+  box-shadow: -0.4rem -0.4rem 1rem rgba(143, 201, 255, 0.1), 0.66rem 0.66rem 1.4rem rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+}
+ion-router-link {
+  color: #38B7FF !important;
+  text-decoration: none;
+  cursor: pointer;
+}
+ion-input input {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+html {
+  font-size: 14px;
+}
+a {
+  color: #38B7FF !important;
+  text-decoration: none;
+}
+#app {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: rgba(var(--ion-text-color-rgb), 0.6);
+  font-size: 1rem;
+  padding: 1rem !important;
+}
+@media only screen and (min-width: 540px){
+  ion-app {
+    width: 540px !important;
+    margin: 0 auto !important;
+  }
+}
+ion-label {
+  overflow: visible !important;
+}
+ion-label h2 {
+  font-size: 1rem;
+}
+ion-label p {
+    font-size: 0.8rem;
+}
+ion-toolbar ion-title {
+    font-size: 1.2rem;
+    width: 100% !important;
+    position: absolute;
+    height: 0;
+    left: 0;
+}
+ion-toolbar ion-button {
+  background: linear-gradient(135deg, #22272E 0%, #0C0D10 100%);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+ion-content {
+  --padding-start: 1rem;
+  --padding-end: 1rem;
+  --padding-top: 1rem;
+  --padding-bottom: 1rem;
+}
+ion-title.ios {
+    top: auto;
+}
+.searchbar-input {
+  background: transparent !important;
+}
+.swiper-wrapper {
+  background: transparent;
+  padding: 0;
+}
+ion-textarea {
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  border-radius: 1rem;
+  font-size: 1rem !important;
+  background: linear-gradient(106.8deg, #24292F 0%, #212932 100%) !important;
+}
+ion-checkbox, ion-radio {
+  --background-checked: radial-gradient(102.04% 102.04% at 100% 100%, #38B7FF 0%, #0164A8 100%);
+  --background: gradient(180deg, #0C0D10 0%, #22272E 164.77%);
+  --border-radius: 0.4rem;
+  --inner-border-radius: 4px;
+}
+.radio-inner {;
+    width: 90% !important;
+    height: 90% !important;
+}
+ion-header {
+    padding-top: 1rem;
+}
+.pln {
+    stroke: #8B55FF !important;
+    color: #8B55FF !important;
+}
+.dfn {
+    stroke: #ED1146 !important;
+    color: #ED1146 !important;
+}
+.claimant {
+    stroke: #ED9511 !important;
+    color: #ED9511 !important;
+}
