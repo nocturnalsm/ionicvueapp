@@ -126,9 +126,20 @@ export default defineComponent({
      */
     const doLogin = async () => {
       try {
+        /*
         const { username, password } = credentials.value;
         await state.login(username, password);
         emailinput.value.$el.value = "";
+        passwordinput.value.$el.value = "";
+        */
+        const state = {
+          error: null,
+          loading: false,
+          user: {
+            value: 'Admin'
+          },
+          userData: {}
+        }
         router.push({name : "home" });
       } catch (error) {
         handleAlert(error.message, true);

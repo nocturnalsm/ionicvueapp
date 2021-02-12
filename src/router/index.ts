@@ -239,8 +239,6 @@ router.beforeEach((to, from, next) => {
   const front = ['login','register','forgot','verification','resetpassword','resetsuccess'];
   if (state.user.value && (to.name === 'login')) {
     next({ name: "home" });
-  } else if (!state.user.value && (typeof to.name === 'string' && !front.includes(to.name))) {
-    next({ name: "opening" });
   } else {
     next();
   }
